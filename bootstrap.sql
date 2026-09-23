@@ -1,5 +1,6 @@
 -- Idempotent setup for PostgREST. Runs on every start as the database owner.
 -- psql variables: api_schema, anon_role, auth_role, authenticator_password
+SET client_min_messages = warning;
 
 SELECT format('CREATE ROLE %I NOLOGIN', :'anon_role')
  WHERE NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname = :'anon_role') \gexec
