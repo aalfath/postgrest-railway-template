@@ -1,5 +1,7 @@
 # Deploy and Host PostgREST on Railway
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/postgrest-1?utm_medium=integration&utm_source=button&utm_campaign=postgrest)
+
 PostgREST turns a PostgreSQL database into a RESTful API. Tables, views and functions in the exposed schema become endpoints with filtering, pagination, embedding and OpenAPI docs. Permissions come from Postgres roles, grants and row-level security, and requests are authenticated with JWTs. It powers the REST layer of Supabase.
 
 ## About Hosting PostgREST
