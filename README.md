@@ -6,7 +6,7 @@ PostgREST turns a PostgreSQL database into a RESTful API. Tables, views and func
 
 ## About Hosting PostgREST
 
-This template deploys PostgREST v16.3, a Railway Postgres database and Swagger UI. On every start, a small wrapper creates the `authenticator`, `web_anon` and `authenticated` roles and the `api` schema, and it is safe to re-run. It also adds an event trigger so new tables appear in the API without a restart. Anonymous requests get nothing until you grant access. Requests carrying a JWT with `"role": "authenticated"`, signed with the generated secret, can read and write tables in `api`. PostgREST is light and stateless, so the Hobby plan is enough for most projects.
+This template deploys PostgREST v16.6, a Railway Postgres database and Swagger UI. On every start, a small wrapper creates the `authenticator`, `web_anon` and `authenticated` roles and the `api` schema, and it is safe to re-run. It also adds an event trigger so new tables appear in the API without a restart. Anonymous requests get nothing until you grant access. Requests carrying a JWT with `"role": "authenticated"`, signed with the generated secret, can read and write tables in `api`. PostgREST is light and stateless, so the Hobby plan is enough for most projects.
 
 ## Common Use Cases
 
@@ -16,14 +16,14 @@ This template deploys PostgREST v16.3, a Railway Postgres database and Swagger U
 
 ## Dependencies for PostgREST Hosting
 
-- PostgREST v16.3 (official `postgrest/postgrest:v16.3` binary, digest-pinned) built from [aalfath/postgrest-railway-template](https://github.com/aalfath/postgrest-railway-template)
+- PostgREST v16.6 (official `postgrest/postgrest:v16.6` binary, digest-pinned) built from [aalfath/postgrest-railway-template](https://github.com/aalfath/postgrest-railway-template)
 - Railway Postgres (`ghcr.io/railwayapp-templates/postgres-ssl:18`) with a volume
 - `swaggerapi/swagger-ui:v5.33.0` for interactive API docs
 
 ### Deployment Dependencies
 
 - [PostgREST documentation](https://docs.postgrest.org/en/v16/)
-- [PostgREST v16.3 release notes](https://github.com/PostgREST/postgrest/releases/tag/v16.3)
+- [PostgREST v16.6 release notes](https://github.com/PostgREST/postgrest/releases/tag/v16.6)
 - [Template source repository](https://github.com/aalfath/postgrest-railway-template)
 - [Railway private networking](https://docs.railway.com/reference/private-networking)
 

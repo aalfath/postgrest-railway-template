@@ -1,5 +1,5 @@
-# PostgREST v16.3 on Alpine, with psql for the first-run role/schema bootstrap.
-FROM postgrest/postgrest:v16.3@sha256:ec0e25a4e24b0a3bc5e4f011369bfc736bd1b19f513bd01079b86329a7636962 AS postgrest
+# PostgREST v16.6 on Alpine, with psql for the first-run role/schema bootstrap.
+FROM postgrest/postgrest:v16.6@sha256:5ce030c153500fe90ba157da4da8ba99ab51d3bc7b95e071bd0b544b67a632f7 AS postgrest
 
 FROM alpine:3.24.2
 RUN apk add --no-cache postgresql-client tini \
